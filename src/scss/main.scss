@@ -1,0 +1,137 @@
+@import 'core/reset';
+
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';*/
+
+/* ESTILOS DEL PROYECTO */
+
+:root {
+  font-size: 16px;
+  color: #54585a;
+
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
+  --black-8: rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/header-background-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.header .title {
+  height: 60px;
+  text-transform: uppercase;
+  opacity: 0.95;
+  background-color: var(--blue-green);
+  color: white;
+}
+
+.main_menu {
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: var(--aqua);
+  opacity: 0.9;
+}
+
+.main_menu .menu_link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 2em;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 45px;
+  color: var(--aqua);
+}
+
+.text {
+  text-align: center;
+}
+
+.team {
+  padding: 30px 15px;
+}
+
+.team .title {
+  margin-bottom: 15px;
+}
+
+.strengths-weaknesses {
+  padding: 0 15px;
+}
+
+.strengths-weaknesses .title {
+  font-size: 22px;
+  text-transform: none;
+  color: var(--blue-green);
+}
+
+.about-us {
+  padding: 0 15px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.member__title {
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.member__photo {
+  width: 180px;
+  height: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px var(--black-8);
+}
+
+.member__ssnn {
+  margin-top: 15px;
+  list-style-type: none;
+  display: flex;
+}
+
+.member__ssnn--item::before {
+  content: '·';
+}
+.member__ssnn--item:first-of-type::before {
+  content: '';
+}
+
+.member__socialicon {
+  padding: 0 0.25em;
+  text-decoration: none;
+  color: var(--blue-green);
+}
